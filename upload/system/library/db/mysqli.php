@@ -13,7 +13,7 @@ class MySQLi {
 			throw new \Exception('Error: Could not make a database link using ' . $username . '@' . $hostname . '!');
 		}
 
-		$this->connection->set_charset("utf8");
+		$this->connection->set_charset("utf8mb4");
 		$this->connection->query("SET SQL_MODE = ''");
 	}
 
